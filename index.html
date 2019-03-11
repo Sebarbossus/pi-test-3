@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PI Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Willkommen zum dritten PI-Test (SLD)</h1>
+        <form id="pi-test-form">
+            <div class="questions" id="question-1">
+                <p class="question-text">Wofür steht SLD?</p>
+                <label for="q1a">
+                    <input type="radio" id="q1a" value="q1a" name="0">
+                    System Landscape Directory
+                </label>
+                <label for="q1b">
+                    <input type="radio" id="q1b" value="q1b" name="0">
+                    Service Landscape Directory
+                </label>
+                <label for="q1c">
+                    <input type="radio" id="q1c" value="q1c" name="0">
+                    Services Landscape Directory
+                </label>
+                <p class="answers" id="a1"></p>
+            </div>
+
+            <div class="questions" id="question-2">
+                <p class="question-text">Welche 3 Reiter/Kacheln sind auf dem Startbildschirm des SLD zu sehen?</p>
+                <label for="q2a">
+                    <input type="radio" id="q2a" value="q2a" name="1">
+                    Technische Systeme, Landschaften und Business-Systeme
+                </label>
+                <label for="q2b">
+                    <input type="radio" id="q2b" value="q2b" name="1">
+                    Landschaft, Katalog und Entwicklung
+                </label>
+                <label for="q2c">
+                    <input type="radio" id="q2c" value="q2c" name="1">
+                    Landschaft, Softwarekatalog und Entwicklung
+                </label>
+                <p class="answers" id="a2"></p>
+            </div>
+
+            <div class="questions" id="question-3">
+                <p class="question-text">Was ist der Nutzen des SLD?</p>
+                <label for="q3a">
+                    <input type="radio" id="q3a" value="q3a" name="2">
+                    Man kann mit dem SLD alle Prozesse integrieren
+                </label>
+                <label for="q3b">
+                    <input type="radio" id="q3b" value="q3b" name="2">
+                    SLD ist der Desktop von SAP PI, SLD enthält alle anderen Teile von PI
+                </label>
+                <label for="q3c">
+                    <input type="radio" id="q3c" value="q3c" name="2">
+                    Im SLD definiert man die Systemlandschaft (was verbinde ich mit wem und wie)
+                </label>
+                <p class="answers" id="a3"></p>
+            </div>
+
+            <div class="questions" id="question-4">
+                <p class="question-text">Welche Elemente hat man im Reiter Landschaft?</p>
+                <label for="q4a">
+                    <input type="radio" id="q4a" value="q4a" name="3">
+                    Technische Systeme, Landschaften und Business-Systeme
+                </label>
+                <label for="q4b">
+                    <input type="radio" id="q4b" value="q4b" name="3">
+                    Technische Services, Landschaften und Business-Services
+                </label>
+                <label for="q4c">
+                    <input type="radio" id="q4c" value="q4c" name="3">
+                    Landschaft des Senders, Landschaft von SAP PI und Landschaft des Empfängers
+                </label>
+                <p class="answers" id="a4"></p>
+            </div>
+
+            <div class="questions" id="question-5">
+                <p class="question-text">Was ist ein technisches System?</p>
+                <label for="q5a">
+                    <input type="radio" id="q5a" value="q5a" name="4">
+                    Die IP-Adresse des Systems, das wir auswählen (Sender, Empfänger,...)
+                </label>
+                <label for="q5b">
+                    <input type="radio" id="q5b" value="q5b" name="4">
+                    Das System, das die Technik bei der Integration macht
+                </label>
+                <label for="q5c">
+                    <input type="radio" id="q5c" value="q5c" name="4">
+                    Die technischen Eigenschaften eines Systems: IP-Adresse, Herausgeber,...
+                </label>
+                <p class="answers" id="a5"></p>
+            </div>
+
+            <div class="questions" id="question-6">
+                <p class="question-text">Was ist ein Business System?</p>
+                <label for="q6a">
+                    <input type="radio" id="q6a" value="q6a" name="5">
+                    Ein Unsinn
+                </label>
+                <label for="q6b">
+                    <input type="radio" id="q6b" value="q6b" name="5">
+                    Ein logischer Name, um unseren Sender, Empfänger eindeutig zu identifizieren
+                </label>
+                <label for="q6c">
+                    <input type="radio" id="q6c" value="q6c" name="5">
+                    Das System eines Unternehmens
+                </label>
+                <p class="answers" id="a6"></p>
+            </div>
+
+            <div class="questions" id="question-7">
+                <p class="question-text">In welchem Fall ist ein Business System hilfreich? (Richtigste Antwort auswählen)</p>
+                <label for="q7a">
+                    <input type="radio" id="q7a" value="q7a" name="6">
+                    Wenn Leute beim Kunden mehr einkaufen, muss ich das Business System nicht ändern
+                </label>
+                <label for="q7b">
+                    <input type="radio" id="q7b" value="q7b" name="6">
+                    Wenn sich das technische System ändert (IP, Herausgeber...), muss ich nur auf das neue technische System von meinem Business System aus zeigen. Ich ändere nicht das technische System bei jeder Verbindung
+                </label>
+                <label for="q7c">
+                    <input type="radio" id="q7c" value="q7c" name="6">
+                    Wenn das Rechenzentrum brennt, kann ich mit dem Business System das Feuer löschen
+                </label>
+                <p class="answers" id="a7"></p>
+            </div>
+
+            <div class="questions" id="question-8">
+                <p class="question-text">Was wären Beispiele von Datenbanken?</p>
+                <label for="q8a">
+                    <input type="radio" id="q8a" value="q8a" name="7">
+                    Microsoft Windows und Macintosh OS
+                </label>
+                <label for="q8b">
+                    <input type="radio" id="q8b" value="q8b" name="7">
+                    JavaScript und Java
+                </label>
+                <label for="q8c">
+                    <input type="radio" id="q8c" value="q8c" name="7">
+                    SAP HANA und Oracle mySQL
+                </label>
+                <p class="answers" id="a8"></p>
+            </div>
+
+            <div class="questions" id="question-9">
+                <p class="question-text">Was wäre ein Beispiel von einer Softwarekomponente?</p>
+                <label for="q9a">
+                    <input type="radio" id="q9a" value="q9a" name="8">
+                    Ein Browser
+                </label>
+                <label for="q9b">
+                    <input type="radio" id="q9b" value="q9b" name="8">
+                    Ein SAP-Modul, wie SAP FI
+                </label>
+                <label for="q9c">
+                    <input type="radio" id="q9c" value="q9c" name="8">
+                    Ein Server
+                </label>
+                <p class="answers" id="a9"></p>
+            </div>
+
+            <div class="questions" id="question-10">
+                <p class="question-text">Was wäre ein Beispiel von einem Produkt?</p>
+                <label for="q10a">
+                    <input type="radio" id="q10a" value="q10a" name="9">
+                    SAP S/4
+                </label>
+                <label for="q10b">
+                    <input type="radio" id="q10b" value="q10b" name="9">
+                    SAP S/4 ECC 7
+                </label>
+                <label for="q10c">
+                    <input type="radio" id="q10c" value="q10c" name="9">
+                    SAP HR 7.23
+                </label>
+                <p class="answers" id="a10"></p>
+            </div>
+
+            <div class="questions" id="question-11">
+                <p class="question-text">In welchem Fall würde man selbst entwicklen?</p>
+                <label for="q11a">
+                    <input type="radio" id="q11a" value="q11a" name="10">
+                    SAP PI-Standard reicht beim Kunden nicht aus oder ich möchte SAP PI personalisieren
+                </label>
+                <label for="q11b">
+                    <input type="radio" id="q11b" value="q11b" name="10">
+                    Der Kunde möchte eine neue NetWeaver-Version
+                </label>
+                <label for="q11c">
+                    <input type="radio" id="q11c" value="q11c" name="10">
+                    Der Kunde möchte, dass man vor Ort arbeitet
+                </label>
+                <p class="answers" id="a11"></p>
+            </div>
+
+            <div class="questions" id="question-12">
+                <p class="question-text">Was ist der Unterchied zwischen "Technisches System" und "Business System"?</p>
+                <label for="q12a">
+                    <input type="radio" id="q12a" value="q12a" name="11">
+                    Das technische System ist der logische Name des Business-Systems
+                </label>
+                <label for="q12b">
+                    <input type="radio" id="q12b" value="q12b" name="11">
+                    Ein technisches System ist für Technikmitarbeiter und ein Business-System für Kunden
+                </label>
+                <label for="q12c">
+                    <input type="radio" id="q12c" value="q12c" name="11">
+                    Das technische System beschreibt das System, das man anbinden möchte. Business-System ist nur ein logischer Name für dieses System
+                </label>
+                <p class="answers" id="a12"></p>
+            </div>
+
+            <div class="buttons">
+                <input id="submit-btn" type="submit" value="Senden"/>
+                <button id="clear-btn">Löschen</button>
+            </div>
+        </form>
+        <p id="correct-count"></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
